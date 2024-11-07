@@ -181,31 +181,6 @@
                 });
             }
 
-            // function isLoggedIn() {
-            //     // Replace with actual logic to check login status
-            //     // For example, you might check a session variable or token
-            //     return {{ auth()->check() ? 'true' : 'false' }};
-            // }
-
-            // // Function to handle order placement
-            // function submitOrder(subtotal) {
-            //     if (!isLoggedIn()) {
-            //         // Redirect to login if the user is not logged in
-            //         window.location.href = "{{ route('login') }}";
-            //     } else {
-            //         // Show the order confirmation modal
-            //         openModal();
-            //     }
-            // }
-
-            // // Function to open the modal
-            // function openModal() {
-            //     document.getElementById('orderConfirmationModal').classList.remove('hidden');
-            // }
-
-            // // Function to close the modal
-            // function closeModal() {
-            //     document.getElementById('orderConfirmationModal').classList.add('hidden');
-            // }
+          
         </script>
     @endsection

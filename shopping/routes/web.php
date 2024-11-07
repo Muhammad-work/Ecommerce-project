@@ -55,7 +55,7 @@ Route::controller(homeController::class)->group(function(){
     Route::post('/logout','logout')->name('logout');
     Route::get('/about','viewAbout')->name('about');
     Route::get('/search','search')->name('search');
-    Route::get('/search-category/{categort}','searchCategory')->name('searchCategory');
+    Route::get('/search-category/{id}','searchByCategory')->name('searchByCategory');
 });
 
 

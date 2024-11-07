@@ -97,7 +97,7 @@
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     @foreach ($categoryData as $data)
                         <li class="dropdown-header">
-                            <a href="#"
+                            <a href="{{ route('searchByCategory',$data['category']->id) }}"
                                 class="text-dark text-decoration-none">{{ $data['category']->category_name }}</a>
                         </li>
                     @endforeach

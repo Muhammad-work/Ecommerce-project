@@ -138,7 +138,7 @@ class homeController extends Controller
     public function search(Request $req) {
 
 
-        $general = general::first();
+    $general = general::first();
     $categories = Category::with('sub_category')->get();
 
     $categoryData = $categories->map(function ($category) {
@@ -151,8 +151,7 @@ class homeController extends Controller
     
     $keyword = $req->input('keyword');
     $categoryId = $req->input('category');
-    // return $categoryId;
-
+  
     
     $query = product::query();
 
@@ -182,7 +181,24 @@ class homeController extends Controller
     return view('fornt.search', compact('general', 'categoryData', 'products', 'keyword','categoryId'));
     }
 
-   
+     
+    public function searchByCategory(string $id){
+        $general = general::first();
+        $categories = Category::with('sub_category')->get();
+    
+        $categoryData = $categories->map(function ($category) {
+            return [
+                'category' => $category,
+                'sub_category' => $category->sub_category,
+            ];
+        });
 
+        $products  = product::with('sub_category')->where('sub_category_id',$id)->get();
+
+         return view('fornt.searchCategory', compact('general', 'categoryData', 'products'));
+     
+    }
+
+   
    
 }

@@ -17,7 +17,11 @@ class validUser
     public function handle(Request $request, Closure $next): Response
     {
          if(Auth::check()){
-            return $next($request);
+            if(Auth::user()->role == 'admin'){
+               return $next($request);
+            }else{
+               return redirect()->route('home');
+            }
          }else{
             return redirect()->route('login');
          }

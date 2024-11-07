@@ -95,7 +95,7 @@ class homeController extends Controller
 
         $request->validate([
             'email' => 'required|email',
-            'password' => 'required|max:8|min:6',
+            'password' => 'required|min:6',
         ]);
 
 
@@ -109,8 +109,7 @@ class homeController extends Controller
             }
         }
 
-        return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
+        return back()->with(['email' => 'The provided credentials do not match our records.',
         ]);
     }
 
@@ -199,6 +198,4 @@ class homeController extends Controller
      
     }
 
-   
-   
 }

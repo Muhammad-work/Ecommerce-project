@@ -113,13 +113,7 @@
                                     <p>Products Stock</p>
                                 </a>
                             </li>
-                            {{-- <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Products Sale</p>
-                                </a>
-                            </li> --}}
-                        
+                           
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -131,30 +125,14 @@
                             </p>
                         </a>
                         <ul class="nav nav-treeview">
-                            {{-- <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Banners Setting</p>
-                                </a>
-                            </li> --}}
+                          
                             <li class="nav-item">
                                 <a href="{{ route('general-setting') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>General Settings</p>
                                 </a>
                             </li>
-                            {{-- <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Profile settings</p>
-                                </a>
-                            </li> --}}
-                            {{-- <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Socail Links</p>
-                                </a>
-                            </li> --}}
+                          
                         </ul>
                     </li>
                 </ul>

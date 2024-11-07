@@ -31,7 +31,7 @@
                                 class="w-[300px] h-auto ms-3 mt-3 p-1 rounded hover:shadow-lg hover:shadow-indigo-500/40 transition-all duration-[0.5s] relative cursor-pointer hover:text-black">
                                 <a class="text-black hover:text-black" href="{{ route('view-product', $data->id) }}">
                                     <div class="w-full h-[220px]">
-                                        <img class="w-[70%] mx-auto" src="{{ asset('storage/' . $data->p_img) }}"
+                                        <img class="w-[60%] mx-auto" src="{{ asset('storage/' . $data->p_img) }}"
                                             alt="">
                                     </div>
                                     <div class="text-center">

@@ -16,7 +16,7 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <style>
+    {{-- <style>
         * {
             font-family: sans-serif;
         }
@@ -73,7 +73,7 @@
             height: 100%;
             /* Ensures all cards are the same height */
         }
-    </style>
+    </style> --}}
 </head>
 
 <body>

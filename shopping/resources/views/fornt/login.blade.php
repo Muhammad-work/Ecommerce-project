@@ -17,7 +17,7 @@
 
     <div class="flex justify-center items-center min-h-screen bg-gray-100 p-4 sm:p-8">
         <div class="w-full max-w-md bg-white shadow-lg rounded-lg p-6 sm:p-8">
-            <form action="{{ route('storeLogin') }}" method="POST" class="space-y-6">
+            <form action="{{ route('storeLogin') }}" method="POST" class="space-y-6" autocomplete="off">
                 @csrf
                 <h2 class="text-2xl font-bold text-[#E2990F] border border-[#E2990F] inline-block px-4 py-2 mb-4">Login</h2>
 

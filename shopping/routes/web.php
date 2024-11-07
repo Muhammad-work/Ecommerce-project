@@ -60,7 +60,7 @@ Route::controller(homeController::class)->group(function(){
 
 
 Route::controller(addToCartController::class)->group(function(){
-    Route::get('/mycart','mycart')->name('mycart')->middleware(validUser::class);
+    Route::get('/mycart','mycart')->name('mycart');
     Route::post('/addToCart','addToCart')->name('cart.add');
     Route::post('/update-cart','update')->name('cart.update');
     Route::post('/remove-cart','remove')->name('cart.remove');

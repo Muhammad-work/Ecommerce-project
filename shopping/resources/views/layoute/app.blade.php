@@ -31,24 +31,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
-        <!-- AdminLTE CSS -->
-        <link rel="stylesheet" href="path/to/adminlte.min.css">
-        {{-- data table link --}}
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <!-- AdminLTE CSS -->
+    <link rel="stylesheet" href="path/to/adminlte.min.css">
+    {{-- data table link --}}
     <link rel="stylesheet" href="{{ asset('Admin/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }} ">
-    <link rel="stylesheet"
-        href="{{ asset('Admin/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }} ">
+    <link rel="stylesheet" href="{{ asset('Admin/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }} ">
     <link rel="stylesheet" href="{{ asset('Admin/plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }} ">
-    
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
 
         <!-- Preloader -->
-        {{-- <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="{{ asset('admin/dist/img/AdminLTELogo.png') }}" alt="AdminLTELogo" height="60" width="60">
-  </div> --}}
+        <div class="preloader flex-column justify-content-center align-items-center">
+            <img class="animation__shake " style="width: 20%; height: 210px;" src="{{ asset('storage/img/logo.png') }}" alt="AdminLTELogo"
+                height="60" width="60">
+        </div>
 
         <!-- Navbar -->
         @yield('nav')
@@ -109,12 +109,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- DataTables JS -->
-<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-<!-- AdminLTE JS -->
-<script src="path/to/adminlte.min.js"></script>
- 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <!-- AdminLTE JS -->
+    <script src="path/to/adminlte.min.js"></script>
+
     <script src="{{ asset('admin/plugins/datatables/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('admin/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
     <script src="{{ asset('admin/plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>

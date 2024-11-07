@@ -60,6 +60,7 @@
                             <th class="border border-gray-300 px-4 py-2 text-left">Total</th>
                             <th class="border border-gray-300 px-4 py-2 text-left">Date</th>
                             <th class="border border-gray-300 px-4 py-2 text-left">Status</th>
+
                             <th class="border border-gray-300 px-4 py-2 text-left">Action</th>
                         </tr>
                     </thead>
@@ -86,12 +87,15 @@
                                     @if ($order->status == 'down')
                                         <td><span class="bg-success p-2 text-white rounded">Deliver</span></td>
                                     @else
-                                        <td><span class="bg-success p-2 text-white rounded">Pending</span></td>
+                                        <td><span class="bg-warning p-2 text-white rounded">Pending</span></td>
                                     @endif
-                                    <td class="border border-gray-300 px-4 py-2">
-                                        <a class="bg-red-500 text-white px-2 py-1 rounded"
-                                            href="{{ route('removeOrder', $order->id) }}">Remove</a>
-                                    </td>
+                                    @if ($order->status !== 'down')
+                                        <td class="border border-gray-300 px-4 py-2">
+                                            <a class="bg-red-500 text-white px-2 py-1 rounded"
+                                                href="{{ route('removeOrder', $order->id) }}">Remove</a>
+                                        </td>
+                                    @endif
+
                                 </tr>
                             @endforeach
                         @endforeach
@@ -127,6 +131,5 @@
 
 
         });
-
     </script>
 @endsection

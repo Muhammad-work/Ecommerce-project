@@ -19,7 +19,7 @@
         <h2 class="text-center text-2xl font-semibold">Hello {{ Auth::user()->name }} Welcome to Your Profile</h2>
         <div class="col-12 p-2">
             <div class="bg-white shadow-lg rounded-lg">
-                <div class="bg-blue-600 text-white rounded-t-lg p-4">
+                <div class="bg-[#DA9509] text-white rounded-t-lg p-4">
                     <h5 class="mb-0 text-lg">Profile Overview</h5>
                 </div>
                 <div class="p-4">
@@ -41,7 +41,7 @@
                         </div>
                         <div class="col-12">
                             <a href="{{ route('viewEditPage', Auth::user()->id) }}"
-                                class="bg-green-500 text-white px-4 py-2 rounded mt-3 inline-block">Edit Profile</a>
+                                class="bg-[#DA9509] text-white px-4 py-2 rounded mt-3 inline-block">Edit Profile</a>
                         </div>
                     </div>
                 </div>

@@ -35,7 +35,6 @@
                                 <tr>
                                     <th>ID</th>
                                     <th>CATEGORY</th>
-                                    <th>POST</th>
                                     <th>ACTIOLN</th>
                                 </tr>
                             </thead>
@@ -44,7 +43,6 @@
                                     <tr>
                                         <td>{{ $value->id}}</td>
                                         <td>{{ $value->category_name }}</td>
-                                        <td>{{ $value->post }}</td>
                                         <td>
                                             <a href="{{ route('category.edit', $value->id) }}" class="btn btn-sm btn-primary"><i class="fa-solid fa-pen-to-square"></i></a>
                                             <form class="d-inline" action="{{route('category.destroy',$value->id)}}" method="POST">

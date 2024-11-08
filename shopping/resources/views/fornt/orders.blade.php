@@ -11,7 +11,7 @@
         }
     </style>
     <div class="col-9 mt-4 mx-auto overflow-auto">
-        <h2 class="text-center">All Orders</h2>
+        <h2 class="text-center font-bold text-2xl mb-4">All Orders</h2>
         <table class="table table-bordered ">
             <thead class="thead-light">
                 <tr>

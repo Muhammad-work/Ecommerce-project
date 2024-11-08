@@ -10,6 +10,11 @@
             overflow-x: hidden;
         }
     </style>
+
+
+    <div class="w-full h-[70px] bg-[#F7F7F7] flex items-center px-5">
+        <i class="fa-solid fa-bars font-bold  text-2xl cursor-pointer" id="menu"></i>
+    </div>
     <div class="col-9 mt-4 mx-auto overflow-auto">
         <h2 class="text-center font-bold text-2xl mb-4">All Orders</h2>
         <table class="table table-bordered ">
@@ -37,7 +42,7 @@
                             <td>
                                 <img style="width: 40px" src="{{ asset('storage/' . $item['img']) }}" alt="">
                             </td>
-                            <td>      {{ $item['name'] }}</td>
+                            <td> {{ $item['name'] }}</td>
                             <td>${{ $item['price'] }}</td>
                             <td>{{ $item['quantity'] }}</td>
                             <td> ${{ $item['price'] * $item['quantity'] }}</td>
@@ -59,4 +64,24 @@
             </tbody>
         </table>
     </div>
+
+    
+    <script>
+        let menu = document.getElementById('menu');
+        let sidebarmenu = document.getElementById('sidebarmenu');
+        let cancenmenu = document.getElementById('cancenmenu');
+
+        menu.addEventListener('click', () => {
+
+            sidebarmenu.style.transform = 'translateX(0%)';
+
+
+        });
+        cancenmenu.addEventListener('click', () => {
+
+            sidebarmenu.style.transform = 'translateX(-100%)';
+
+
+        });
+    </script>
 @endsection

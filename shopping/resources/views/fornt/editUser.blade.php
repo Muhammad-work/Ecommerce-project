@@ -12,8 +12,8 @@
     </style>
 
     <div class=" flex justify-center place-content-center  mt-4">
-        <div class="bg-white w-[50%] p-4 rounded-md  shadow-lg">
-            <h2 class="text-center font-bold text-2xl">Update User Information</h2>
+        <div class="bg-white md:w-[50%] p-4 rounded-md  shadow-lg">
+            <h2 class="text-center font-bold text-2xl  mb-3">Update User Information</h2>
             <form action="{{ route('storeUser', $user->id) }}" method="POST" enctype="multipart/form-data" autocomplete="off">
                 @csrf
                 <div class="mb-3">

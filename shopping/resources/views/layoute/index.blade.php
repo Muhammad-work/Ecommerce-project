@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> {{ $general->s_title }} </title>
+    <link rel="shortcut icon" href="{{ asset('storage/img/Untitled-3.png') }}" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -16,64 +17,6 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    {{-- <style>
-        * {
-            font-family: sans-serif;
-        }
-
-        #cart {
-            position: relative;
-        }
-
-        #span {
-            position: absolute;
-            top: 12px;
-            left: 55%;
-            background: #47b547;
-            color: #ffffff;
-            padding: 0px 5px;
-            border-radius: 50%;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .main {
-            position: relative;
-            transition: all ease 0.7s;
-        }
-
-        .quick-view {
-            position: absolute;
-            width: 100%;
-            height: 40px;
-            top: 40%;
-            left: 0;
-            background: #357448;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            visibility: hidden;
-        }
-
-        .quick-view a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .main:hover .quick-view {
-            visibility: visible;
-            transition: all ease 0.7s;
-        }
-
-        ul li {
-            list-style: none;
-        }
-
-        .card {
-            height: 100%;
-            /* Ensures all cards are the same height */
-        }
-    </style> --}}
 </head>
 
 <body>
